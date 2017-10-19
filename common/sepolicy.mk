@@ -3,5 +3,5 @@
 # inherit from cygnus
 #
 
-BOARD_SEPOLICY_DIRS += \
-    device/cygnus/sepolicy/common
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    device/cygnus/sepolicy/common/private
