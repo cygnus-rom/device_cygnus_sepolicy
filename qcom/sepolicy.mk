@@ -4,4 +4,5 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    device/cygnus/sepolicy/qcom
+    device/cygnus/sepolicy/qcom/common
+
