@@ -1,1 +1,2 @@
 type hal_cygnus_camera_motor_hwservice, hwservice_manager_type;
+type hal_cygnus_fod_hwservice, hwservice_manager_type;
