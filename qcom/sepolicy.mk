@@ -9,6 +9,14 @@ TARGET_USES_PREBUILT_VENDOR_SEPOLICY ?= true
 endif
 endif
 
+ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    device/cygnus/sepolicy/qcom/dynamic
+else
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    device/cygnus/sepolicy/qcom/dynamic
+endif
+
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/cygnus/sepolicy/qcom/private
 
